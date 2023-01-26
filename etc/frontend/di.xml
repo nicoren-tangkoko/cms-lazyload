@@ -1,9 +1,20 @@
 <?xml version="1.0"?>
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
     <type name="Magento\Cms\Block\Block">
-        <plugin name="inject_lazy_loading_into_images"
+        <plugin name="cms_block_inject_lazy_loading_into_images"
                 type="MageSuite\CmsLazyload\Plugin\Cms\Block\Block\InjectLazyLoadingIntoImages" />
     </type>
+    <type name="MageSuite\ContentConstructorFrontend\Block\Component">
+        <plugin name="component_inject_lazy_loading_into_images"
+                type="MageSuite\CmsLazyload\Plugin\Cms\Block\Block\InjectLazyLoadingIntoImages" />
+    </type>
+
+    <type name="Magento\Cms\Block\Page">
+        <plugin name="cms_page_inject_lazy_loading_into_images"
+                type="MageSuite\CmsLazyload\Plugin\Cms\Block\Block\InjectLazyLoadingIntoImages" />
+    </type>
+    
+    
     <type name="MageSuite\CmsLazyload\Logger\Logger\InvalidBlockLogger">
         <arguments>
             <argument name="name" xsi:type="string">invalid_block_logger</argument>

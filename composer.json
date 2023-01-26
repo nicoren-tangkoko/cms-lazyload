@@ -1,6 +1,6 @@
 {
-  "name": "creativestyle/magesuite-cms-lazyload",
-  "description": "This module converts images inserted into static blocks to be lazy loaded",
+  "name": "tangkoko/cms-lazyload",
+  "description": "This module is a fork of magesuite/cms-lazyload converts images inserted into static blocks to be lazy loaded",
   "homepage": "https://creativestyle.de",
   "license": "OSL-3.0",
   "type": "magento2-module",
@@ -9,7 +9,7 @@
       "registration.php"
     ],
     "psr-4": {
-      "MageSuite\\CmsLazyload\\": ""
+      "Tangkoko\\CmsLazyload\\": ""
     }
   }
 }

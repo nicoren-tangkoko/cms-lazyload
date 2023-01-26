@@ -22,7 +22,7 @@ class InjectLazyLoadingIntoImages
         $this->logger = $logger;
     }
 
-    public function afterToHtml(\Magento\Cms\Block\Block $subject, $result)
+    public function afterToHtml(\Magento\Framework\View\Element\AbstractBlock $subject, $result)
     {
         if (!$this->configuration->isEnabled()) {
             return $result;
